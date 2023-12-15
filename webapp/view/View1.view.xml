@@ -1,0 +1,38 @@
+<mvc:View
+    controllerName="project3.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+       
+      <!-- Left part with Contract Type dropdown -->
+     
+       
+          <VBox id="_IDGenVBox1" width="150px">
+            <Label id="_IDGenLabel1" text="Contract Type" />
+            <!-- <Select id="contractTypeSelect" width="150px" change="onContractTypeChange">
+              <core:Item id="_IDGenItem1"  text="GSA"  />
+              <core:Item id="_IDGenItem2"  text="GTA" />
+            </Select> -->
+            <List id="_IDGenList1"  width="200px" headerText="Sales Contract">
+            <StandardListItem id="_IDGenObjectListItem1"  title="GSA" type="Active" press="onView1"/>
+            <StandardListItem id="_IDGenObjectListItem2" title="GTA" type="Active" press="onView2"/>
+            </List>
+          </VBox>
+       
+    
+
+      <!-- Right part for dynamic content based on Contract Type -->
+      <!-- <detailPages>
+        <Page id="rightContent" title="Detail">
+          <HBox id="dynamicContentBox" />
+        </Page>
+      </detailPages> -->
+   
+    </Page>
+</mvc:View>
